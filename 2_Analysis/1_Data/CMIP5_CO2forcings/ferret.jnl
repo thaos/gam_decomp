@@ -1,0 +1,16 @@
+ ! NOAA/PMEL TMAP
+ ! FERRET v6.9  
+ ! Linux 2.6.32-431.5.1.el6.x86_64 64-bit - 04/03/14
+ ! 15-Feb-16 14:41     
+
+GO "$HOME/.ferret"
+use rcp26.nc
+let dF = 5.35*log(CO2/284.725)
+plot dF
+let dF = 5.35*log(CO2)
+plot dF
+let dF = 5.35*log(CO2/100)
+plot dF
+let dF = 5.35*log(CO2/284.725)
+plot dF
+qu
